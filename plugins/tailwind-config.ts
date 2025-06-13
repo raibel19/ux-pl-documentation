@@ -12,7 +12,7 @@ export default function talwindPlugin(): Plugin {
     configurePostCss(postcssOptions) {
       postcssOptions.plugins = postcssOptions.plugins || [];
 
-      postcssOptions.plugins.unshift(postcssImport());
+      postcssOptions.plugins.unshift(postcssImport);
       postcssOptions.plugins.push(tailwindcss(tailwindConfig));
       postcssOptions.plugins.push(autoprefixer());
 

@@ -3,6 +3,8 @@ import tailwindcssAnimate from 'tailwindcss-animate';
 import defaultTheme from 'tailwindcss/defaultTheme';
 import { presetConfig, uxPlContentPaths } from 'ux-pl-components/tailwind';
 
+import tailwindStyles from './plugins/tailwind-styles';
+
 const config: Config = {
   presets: [presetConfig],
   corePlugins: {
@@ -106,7 +108,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [tailwindcssAnimate],
+  plugins: [tailwindcssAnimate, tailwindStyles],
 };
 
 export default config;
