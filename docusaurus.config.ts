@@ -77,6 +77,12 @@ const config: Config = {
       defaultMode: 'light',
     },
     image: 'img/docusaurus-social-card.jpg',
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
+    },
     navbar: {
       title: 'UX-PL',
       logo: {
@@ -152,7 +158,7 @@ const config: Config = {
     },
     tableOfContents: {
       minHeadingLevel: 2,
-      maxHeadingLevel: 5,
+      maxHeadingLevel: 4,
     },
     prism: {
       theme: prismThemes.github,
